@@ -1,9 +1,13 @@
-{{posts}}
+<!-- {{posts}} -->
 
 
 
 
-<!-- Part 5 -->
-<!-- {% for i in x %}
-    <div>{{ i.firstname }} {{ i.surname }}</div>
-{% endfor %} -->
+
+{% for i in data %}
+    <div>
+        <h1>
+            {{ i.firstname }} {{ i.surname }} {{i.age}} 
+        </h1>
+    </div>
+{% endfor %}

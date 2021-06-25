@@ -11,11 +11,12 @@ Q   objects are helpfull for complex queries because they can be combined using
 
 """lt, lte, gt, gte operations performed and the Q methods"""
 def student_list(request):
-    # posts = Student.objects.exclude(age__lt=54)
-    posts = Student.objects.filter(~Q(age__lt=15))
+    """this will return records the not equal to the 12"""
+    posts = Student.objects.filter(~Q(classroom=12)).only
+    ('firstname', 'surname', 'age', )
     print(posts)
     print(connection.queries)
-    return render(request, 'output.html', {'posts':posts})
+    return render(request, 'output.html', {'data':posts})
 
 
 
