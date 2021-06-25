@@ -9,11 +9,10 @@ Q   objects are helpfull for complex queries because they can be combined using
     logical operators and(&), or(|), negation(~)
 """
 
-"""Union operation returns the all the records after eleminating the duplicates"""
+"""lt, lte, gt, gte operations performed and the Q methods"""
 def student_list(request):
-    posts = Student.objects.all().values_list("firstname").union(
-        Teacher.objects.all().values_list("firstname"))
-    
+    # posts = Student.objects.exclude(age__lt=54)
+    posts = Student.objects.filter(~Q(age__lt=15))
     print(posts)
     print(connection.queries)
     return render(request, 'output.html', {'posts':posts})
