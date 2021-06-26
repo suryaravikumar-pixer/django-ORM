@@ -8,7 +8,7 @@
     .install the driver from https://pypi.org/project/psycopg2/
     $pip install psycopg2
 
-#Why not ORM
+##Why not ORM
     .SQL provides us the ability to fine tune queries
         . ORM - potential for reduced performance 
     .Impedence mismatch
