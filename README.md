@@ -1,6 +1,5 @@
 # django-ORM
-<<<<<<< HEAD
-=======
+
 
 ### Object-Relational Mapping Layer means
     .An object-relational mapper(ORM)
