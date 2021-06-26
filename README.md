@@ -1,5 +1,10 @@
 # django-ORM
 
+## Object-Relational Mapping Layer means
+    .An object-relational mapper(ORM)
+        .SQL Alchemy
+        .Django ORM
+    .Converting data between incompatible type systems using object-oriented programming languages
 ## Why ORM
     .Developers writes Python code instead of SQL to:
         .Create, update, delete data and Schemas.
