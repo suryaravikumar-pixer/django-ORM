@@ -22,4 +22,4 @@
     .install the driver from https://pypi.org/project/psycopg2/
     $pip install psycopg2
 
->>>>>>> 8215042e248607b8307590909dd4e45f34d4d826
+
